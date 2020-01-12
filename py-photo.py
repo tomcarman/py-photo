@@ -10,8 +10,8 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-root_dir = '/Users/tomcarman/Desktop/Desktop/Import'
-target_dir = '/Volumes/chicken/home/media'
+root_dir = 'XXX'
+target_dir = 'XXX'
 
 file_name_list = []
 
@@ -39,15 +39,9 @@ for subdir, dirs, files in os.walk(root_dir):
 
 # FOR USE ON INPUT CSV
 # my_input = open('exif_fails_input_1.csv', 'r')
-
 # file_name_list = my_input.read().split('\n')
+# my_input.close()
 
-# my_input.close()UCXD8538
-
-
-
-
-# BEGIN SCRIPT
 
 # Run Exiftool instance as context manager - this means terminating the script will terminate any exiftool subprocesses
 with exiftool.ExifTool() as et:
